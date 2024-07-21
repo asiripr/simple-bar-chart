@@ -11,13 +11,13 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
 
   List<double> weeklySummary = [
-    4.25,
-    8.32,
+    54.25,
+    28.32,
     12.62,
-    3.75,
-    5.85,
-    9.22,
-    10.50
+    63.75,
+    85.85,
+    91.22,
+    37.50
   ];
   @override
   Widget build(BuildContext context) {
@@ -25,7 +25,7 @@ class _HomePageState extends State<HomePage> {
       body: Center(
         child: SizedBox(
           height: 200,
-          child: MyBarGraph()
+          child: MyBarGraph(weeklySummary: weeklySummary,)
         ),
       ),
     );
