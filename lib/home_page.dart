@@ -13,10 +13,10 @@ class _HomePageState extends State<HomePage> {
   List<double> weeklySummary = [
     54.25,
     28.32,
-    12.62,
+    52.62,
     63.75,
     85.85,
-    91.22,
+    31.22,
     37.50
   ];
   @override
@@ -24,7 +24,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: Center(
         child: SizedBox(
-          height: 200,
+          height: 400,
           child: MyBarGraph(weeklySummary: weeklySummary,)
         ),
       ),
