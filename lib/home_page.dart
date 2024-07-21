@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:simple_bar_chart/bar_chart/bar_graph.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -20,6 +21,13 @@ class _HomePageState extends State<HomePage> {
   ];
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: Center(
+        child: SizedBox(
+          height: 200,
+          child: MyBarGraph()
+        ),
+      ),
+    );
   }
 }
